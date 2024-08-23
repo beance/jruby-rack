@@ -1,24 +1,19 @@
-# frozen_string_literal: true
+# -*- encoding: utf-8 -*-
+# stub: jruby-rack 1.2.2 ruby lib
 
-require_relative "lib/jruby/rack/version"
+Gem::Specification.new do |s|
+  s.name = "jruby-rack".freeze
+  s.version = "1.2.2"
 
-Gem::Specification.new do |spec|
-  spec.name = "jruby-rack"
-  spec.version = Jruby::Rack::VERSION
-  spec.authors = ["Denis.Terekhin"]
-  spec.email = ["Denis.Terekhin@cyberprotect.ru"]
-
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
-  spec.license = "MIT"
-
-
-
-  spec.files = Dir.chdir(File.expand_path(__dir__)) do
-    `git ls-files -z`.split("\x0").reject do |f|
-      (f == __FILE__) || f.match(%r{\A(?:(?:test|spec|features)/|\.(?:git|travis|circleci)|appveyor)})
-    end
-  end
-  spec.require_paths = ["lib"]
+  s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib".freeze]
+  s.authors = ["Nick Sieger".freeze]
+  s.date = "2024-08-23"
+  s.description = "JRuby-Rack is a combined Java and Ruby library that adapts the Java Servlet API to Rack. For JRuby only.".freeze
+  s.email = ["nick@nicksieger.com".freeze]
+  s.files = ["History.md".freeze, "LICENSE.txt".freeze, "README.md".freeze, "lib/jruby-rack-1.2.2.jar".freeze, "lib/jruby-rack.rb".freeze, "lib/jruby/rack/version.rb".freeze]
+  s.homepage = "http://jruby.org".freeze
+  s.licenses = ["MIT".freeze]
+  s.rubygems_version = "3.2.33".freeze
+  s.summary = "Rack adapter for JRuby and Servlet Containers".freeze
 end
